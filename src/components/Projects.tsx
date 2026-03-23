@@ -33,7 +33,10 @@ const Projects: React.FC = () => {
   return (
     <section className="projects-section" id="projects">
       <div className="section-container">
-        <h2 className="section-title">Featured Projects</h2>
+        <div className="heading-container">
+          <h2 className="heading-main">FEATURED PROJECTS</h2>
+          <hr className="heading-divider" />
+        </div>
         <div className="projects-grid">
           {projectsData.map((project, idx) => (
             <motion.div 

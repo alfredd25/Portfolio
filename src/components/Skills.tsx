@@ -25,7 +25,10 @@ const Skills: React.FC = () => {
   return (
     <section className="skills-section" id="skills">
       <div className="section-container">
-        <h2 className="section-title">Technical Skills</h2>
+        <div className="heading-container">
+          <h2 className="heading-main">TECHNICAL SKILLS</h2>
+          <hr className="heading-divider" />
+        </div>
         <div className="skills-grid">
           {skillsData.map((group, index) => (
             <motion.div 

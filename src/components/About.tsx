@@ -23,10 +23,9 @@ const About: React.FC = () => {
 
   return (
     <section className="about-section" id="about">
-      <div className="about-header">
-        <h2 className="about-watermark">ABOUT ME</h2>
-        <h2 className="about-title">ABOUT ME</h2>
-        <hr className="about-divider" />
+      <div className="heading-container">
+        <h2 className="heading-main">ABOUT ME</h2>
+        <hr className="heading-divider" />
       </div>
 
       <div className="about-container">
@@ -40,7 +39,7 @@ const About: React.FC = () => {
                 <User size={64} className="profile-icon" />
               </div>
               <img 
-                src="/profile.png" 
+                src="/pfp.jpeg" 
                 alt="Alfred Biju" 
                 className="profile-img" 
                 onError={(e) => (e.currentTarget.style.display = 'none')} 

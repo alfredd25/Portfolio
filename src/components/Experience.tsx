@@ -6,7 +6,10 @@ const Experience: React.FC = () => {
   return (
     <section className="experience-section" id="experience">
       <div className="section-container">
-        <h2 className="section-title">Experience & Achievements</h2>
+        <div className="heading-container">
+          <h2 className="heading-main">EXPERIENCE & ACHIEVEMENTS</h2>
+          <hr className="heading-divider" />
+        </div>
         
         <div className="experience-container">
           <motion.div 

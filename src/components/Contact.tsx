@@ -5,10 +5,9 @@ import './Contact.css';
 const Contact: React.FC = () => {
   return (
     <section className="contact-section" id="contact">
-      <div className="contact-header">
-        <h2 className="contact-watermark">GET IN TOUCH</h2>
-        <h2 className="contact-title">GET IN TOUCH</h2>
-        <hr className="contact-divider" />
+      <div className="heading-container">
+        <h2 className="heading-main">GET IN TOUCH</h2>
+        <hr className="heading-divider" />
       </div>
 
       <div className="contact-card-container">

@@ -18,6 +18,37 @@ html {
   scroll-behavior: smooth;
 }
 
+.heading-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+
+
+.heading-main {
+  position: relative;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--accent-color);
+  z-index: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.heading-divider {
+  border: none;
+  height: 4px;
+  width: 60px;
+  background: var(--accent-color);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-color);

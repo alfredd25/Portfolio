@@ -4,8 +4,8 @@ import './Skills.css';
 
 const skillsData = [
   {
-    category: "Languages & Core",
-    items: ["Python", "SQL", "JavaScript", "React"]
+    category: "Languages",
+    items: ["Python", "SQL"]
   },
   {
     category: "Backend & APIs",

@@ -1,0 +1,105 @@
+.experience-section {
+  padding: 4rem;
+  min-height: 80vh;
+  background: radial-gradient(circle at bottom left, rgba(88, 166, 255, 0.1), transparent 40%);
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.experience-card, .achievement-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s ease;
+}
+
+.experience-card:hover, .achievement-card:hover {
+  border-color: rgba(88, 166, 255, 0.3);
+}
+
+.exp-header {
+  margin-bottom: 1.5rem;
+}
+
+.exp-header h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.exp-date {
+  color: var(--accent-color);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.exp-list {
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.exp-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.achievement-card h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.achieve-item {
+  margin-bottom: 1.8rem;
+  border-left: 2px solid var(--card-border);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.achieve-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+.achieve-item h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.achieve-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.education {
+  border-left-color: transparent;
+}
+.education::before {
+  background: var(--text-secondary);
+}
+
+@media (max-width: 992px) {
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 3rem 1.5rem;
+  }
+}

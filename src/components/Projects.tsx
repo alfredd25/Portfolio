@@ -13,7 +13,8 @@ const projectsData = [
       "Automated Jenkins CI/CD pipeline to deploy containerized pytest suites."
     ],
     tech: ["FastAPI", "Next.js", "PostgreSQL", "Redis", "Celery", "Docker", "AWS EC2", "Jenkins"],
-    github: "https://github.com/alfredd25"
+    github: "https://github.com/alfredd25/NutriTrack",
+    website: "https://github.com/alfredd25/NutriTrack"
   },
   {
     title: "Crypto Matching Engine",
@@ -24,7 +25,7 @@ const projectsData = [
       "Exposed REST and WebSocket APIs using FastAPI/Uvicorn for real-time order book snapshots."
     ],
     tech: ["Python", "FastAPI", "Uvicorn", "Pydantic", "Pytest", "WebSockets"],
-    github: "https://github.com/alfredd25"
+    github: "https://github.com/alfredd25/cryptomatchingengine"
   }
 ];
 
@@ -46,8 +47,8 @@ const Projects: React.FC = () => {
               <div className="project-header">
                 <h3>{project.title}</h3>
                 <div className="project-links">
-                  <a href={project.github} target="_blank" rel="noreferrer"><Github size={20} /></a>
-                  <a href={project.github} target="_blank" rel="noreferrer"><ExternalLink size={20} /></a>
+                  {project.github && <a href={project.github} target="_blank" rel="noreferrer"><Github size={20} /></a>}
+                  {project.website && <a href={project.website} target="_blank" rel="noreferrer"><ExternalLink size={20} /></a>}
                 </div>
               </div>
               <p className="project-date">{project.date}</p>

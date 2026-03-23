@@ -13,13 +13,14 @@ const Hero: React.FC = () => {
       >
         <h2 className="hero-greeting">Hello, I'm</h2>
         <h1 className="hero-name">Alfred Biju</h1>
-        <h3 className="hero-title">Python / Full-Stack Developer</h3>
+        <h3 className="hero-title">Backend & Systems Engineer</h3>
         <p className="hero-desc">
-          Building scalable backend APIs, asynchronous processing systems, and beautiful modern web apps using Python, FastAPI, and React.
+          I build high-performance backend systems — REST & WebSocket APIs, async task pipelines, and production-ready infrastructure with Python, FastAPI, and Docker.
         </p>
         <div className="hero-cta">
-          <a href="#projects" className="btn btn-primary">View My Work</a>
-          <a href="#experience" className="btn btn-secondary">My Experience</a>
+          <a href="#projects" className="btn btn-primary">View Projects</a>
+          <a href="#experience" className="btn btn-secondary">View Experience</a>
+          <a href="/resume.pdf" className="btn btn-secondary" download>Download CV</a>
         </div>
       </motion.div>
     </section>

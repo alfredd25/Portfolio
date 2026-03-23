@@ -26,6 +26,17 @@ const projectsData = [
     ],
     tech: ["Python", "FastAPI", "Uvicorn", "Pydantic", "Pytest", "WebSockets"],
     github: "https://github.com/alfredd25/cryptomatchingengine"
+  },
+  {
+    title: "Fake Review Detector",
+    date: "Apr '25 - May '25",
+    desc: [
+      "Developed a Chrome Extension that automatically scans Amazon and TripAdvisor for potentially fake reviews, injecting color-coded confidence highlights.",
+      "Engineered a Machine Learning backend using Python, Flask, and scikit-learn, trained with a Naive Bayes classifier on public spam datasets.",
+      "Deployed the live Flask API on Render to handle real-time text analysis and prediction requests from the content script."
+    ],
+    tech: ["Python", "Flask", "scikit-learn", "NLTK", "JavaScript", "Render"],
+    github: "https://github.com/alfredd25/FakeReviewDetector"
   }
 ];
 

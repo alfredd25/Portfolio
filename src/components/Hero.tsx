@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero" id="about">
+    <section className="hero" id="home">
       <motion.div 
         className="hero-content"
         initial={{ opacity: 0, y: 20 }}

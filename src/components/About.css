@@ -1,0 +1,232 @@
+.about-section {
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.about-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-title {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+.about-divider {
+  border: none;
+  height: 4px;
+  width: 60px;
+  background: var(--accent-color);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-top-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.profile-card, .about-text-card, .education-card {
+  background: rgba(22, 27, 34, 0.4);
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover, .about-text-card:hover, .education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.profile-card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(88, 166, 255, 0.3);
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1d21;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.profile-placeholder {
+  position: absolute;
+  z-index: 1;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-name {
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.profile-role {
+  color: var(--accent-color);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.card-heading {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.about-paragraph {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.edu-box {
+  background: #101214;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-icon-container {
+  width: 40px;
+  height: 40px;
+  background: rgba(88, 166, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.edu-icon {
+  color: var(--accent-color);
+}
+
+.edu-title {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.edu-institution {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.edu-meta-icon {
+  color: var(--accent-color);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.edu-year {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  background: rgba(88, 166, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  width: max-content;
+}
+
+@media (max-width: 900px) {
+  .about-top-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-watermark {
+    font-size: 4rem;
+  }
+}
